@@ -1,0 +1,646 @@
+@font-face {
+  font-family: 'MyriadPRO';
+  src: url('./assets/font/MyriadPro-Regular.otf'); 
+}
+body {
+    font-family: 'MyriadPRO', serif, sans-serif;
+    /*background-image: url('/assets/img/crossword.png');
+    background-repeat: repeat;*/
+}
+#frontpage {
+    display: block;
+}
+#main {
+    width: 50%; 
+    margin: 0 auto;
+    margin-bottom: 1.125%;
+}
+.menu {
+    background-color: #196487;
+    height: 75px;
+    width: auto;
+    margin: 3.125% 3.125% 0 3.125%; 
+}
+.menu ul {
+    padding: 0;
+}
+.menu-links li {
+    float: left;
+    display: inline-block;
+    width: 33.333%;
+    height: 100%;
+    text-decoration: none; 
+    background-color: #196487;
+}
+.menu-links li:hover {
+    background-color: #0E4D6C;
+    cursor: pointer;
+}
+.menu-links li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    position:relative;
+    top: 40%  
+}
+#site-container {
+    margin: 8.333333333% 8.333333333% 0 8.333333333%;
+}
+.name {
+    text-align: center;
+}
+.name h1 {
+    font-size: 9.7em;
+    color: #196487;
+}
+.major {
+    text-align: center;
+}
+.major #swe {
+    font-size: 2.4em;
+    color: #196487;
+    letter-spacing: 8px;
+}
+#mobile-me {
+    display: none;
+    text-align: center;
+    height: 200px;
+    margin: 10% 0 10% 0;
+}
+#mobile-me img{
+    max-width: 100%;  
+    height: 100%;
+}
+#social-media-container {
+    display: none;
+    width: 100%;
+    background-color: transparent !important;
+    padding: 0;
+    margin: 10.125% 0 0 0;
+    text-align: center;
+}
+#site-container .menu ul li {
+    display: inline-block;
+    width: 32.9%;
+    text-align: center;
+}
+#social-media li img {
+    max-width: 25%;
+}
+
+/* PAGES */
+.page {
+    margin: 0 8.333333333% 0 8.333333333% !important;
+}
+.page-title {
+    text-align: center;
+}
+
+/* ABOUT ME PAGE*/
+#about-view {
+    display: none;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    width: 93%;
+    margin-left: 3%;
+}
+.left-col {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    /*height: 100%;*/
+}
+.left-col .img-container {
+    display: inline-block;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+}
+.left-col .img-container img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.right-col { 
+    display: inline-block;
+    width: 75%;
+    margin-left: 5%;
+}
+.right-col .text-container {
+    width: 100%;
+    /*margin-left: 10%;*/
+}
+.right-col .description {
+    margin: 0;
+}
+#opening-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.bottom-row {
+    display: inline-block;
+    margin: 3.125% 3.125% 0% 3.125%; 
+}
+.bottom-row #bottom-left {
+    float: left;
+    width: 33%;
+}
+#bottom-left .img-container img {
+    max-width: 100%;
+}
+.bottom-row #bottom-middle {
+    float: left;
+    width: 33%;
+    border-right: .25px dotted black;
+    border-left: .25px dotted black;
+}
+#bottom-middle .img-container img {
+    max-width: 100%;
+}
+.bottom-row #bottom-right {
+    float: left;
+    width: 33%;
+}
+#bottom-right .img-container img {
+    max-width: 100%;
+}
+.bottom-row .img-container {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+.bottom-row .text-container {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+}
+.bottom-row .description {
+    font-weight: bold;
+}
+
+
+/* PROJECTS PAGE */
+.no-image img {
+    visibility: hidden;
+}
+#project-view {
+    display: none;
+}
+.row {
+    padding: 1.125%;
+    height: 15%;
+}
+.left-proj {
+    display: inline-block;
+    width: 20%;
+    float:left;
+}
+.left-proj .img-container {
+    width: 100%;
+}
+.left-proj img{ 
+    width: 100%;
+}
+.right-proj {
+    display: inline-block;
+    width: 77%;
+    margin-left: 3%;
+}
+.right-proj p {
+    margin: 0;
+}
+.proj-title {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.right-proj .text-container p {
+    font-size: 1.em
+}
+footer {
+    display: none;
+}
+
+/* RESUME PAGE */
+#resume-view {
+    display: none;
+}
+#resume embed {
+    width: 100%;
+    height:70%;
+}
+
+/* MEDIA QUERIES */
+
+/* HOMEPAGE  <-- change the media queries to make the homepage bigger instead */ 
+@media only screen and (max-width: 1676px) {
+    .name h1 {
+        font-size: 9.0em;
+    }
+}
+@media only screen and (max-width: 1586px) {
+    .major #swe {
+        font-size: 2.0em;
+    }
+}
+@media only screen and (max-width: 1552px) {
+    .name h1 {
+        font-size: 8.7em;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .name h1 {
+        font-size: 8.0em;
+    }
+}
+@media only screen and (max-width: 1485px) {
+    #main {
+        width: 53%;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .major #swe {
+        font-size: 1.6em;
+    }
+}
+@media only screen and (max-width: 1381px) {
+    .name h1 {
+        font-size: 7.7em;
+    }
+    #main {
+        width: 60%;
+    }
+}
+@media screen and (min-width:300px) and (max-width:1330px){
+    .menu-links li {
+        width: 33.333%;
+    }
+    #contact-button {
+        display: none;
+    }
+    #social-media-container {
+        display: inline-block;
+    }
+    #site-container .menu ul li {
+        width: 32.8%;
+    }
+}
+@media only screen and (max-width: 1330px) {
+    .name h1 {
+        font-size: 7.0em;
+    }
+}
+@media only screen and (max-width: 1216px) {
+    .major #swe {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 1210px) {
+    .name h1 {
+        font-size: 6.7em;
+    }
+}
+@media only screen and (max-width: 1160px) {
+    #main {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    .name h1 {
+        font-size: 5.7em;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    #site-container .menu ul li {
+        max-width: 31%;
+    }
+}
+@media only screen and (max-width: 830px) {
+    #main {
+        width: 73%;
+    }
+}
+@media only screen and (max-width: 742px) {
+    #main {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 721px) {
+    #main {
+        width: 77%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    #main {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 614px) {
+    .major #swe {
+        font-size: 1.0em;
+    }
+}
+@media only screen and (max-width: 589px) {
+    .name h1 {
+        font-size: 5.0em;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:559px){
+    #mobile-me {
+        display: block;
+    }
+    .menu-links li {
+        width: 100%;
+    }
+    .name h1 {
+        display: none;
+    }
+    #swe {
+        display: none;
+    }
+    #social-links li {
+        width: 20%;
+    }
+    #site-container .menu ul li {
+        max-width: 30%;
+    }
+}
+
+/* ABOUT PAGE */
+/*vertical responsive queries*/
+
+@media only screen and (max-height: 770px) {
+    .top-row {
+        margin-bottom: 2.125%;
+    } 
+}
+@media only screen and (max-height: 700px) {
+    .top-row {
+        margin-bottom: 4.125%;
+    } 
+}
+@media only screen and (max-height: 650px) {
+    .top-row {
+        margin-bottom: 6.125%;
+    } 
+}                   
+@media only screen and (max-height: 580px) {
+    .top-row {
+        margin-bottom: 8.125%;
+    } 
+}
+@media only screen and (max-height: 530px) {
+    .top-row {
+        margin-bottom: 10.125%;
+    } 
+}
+@media only screen and (max-height: 470px) {
+    .top-row {
+        margin-bottom: 12.125%;
+    }
+}
+@media only screen and (max-height: 360px) {
+    .top-row {
+        margin-bottom: 14.125%;
+    }
+}
+@media only screen and (max-height: 320px) {
+    .top-row {
+        margin-bottom: 16.125%;
+    }
+}
+
+/*horizontal responsive queries*/
+@media only screen and (max-width: 1790px) {
+    .right-col .text-container {
+        position: relative;
+        left: 2%;
+    }
+    .top-row {
+        margin-left: 2%;
+        margin-bottom: 3.125%;
+    }
+}
+@media only screen and (max-width: 1690px) {
+    .top-row {
+        margin-left: 1%;
+        margin-bottom: 3.125%;
+    }
+    .right-col {
+        width: 82%;
+    }
+    .right-col .text-container {
+        position: relative;
+        left: 3%;
+    }
+    .left-col .img-container img { 
+        max-width: 150px;
+    }
+}
+@media only screen and (max-width: 1690px) {
+    .top-row {
+        height: 30%;
+    }
+}
+@media only screen and (max-width: 1560px) {
+    .left-col {
+        display: none;
+    }
+    .top-row {
+        height: 20%;
+        width: 100%;
+        margin-bottom: 3.125%;
+        margin-left:0;
+    }
+    .right-col .text-container {
+        position: relative;
+        left: 0;                                    /*i need to make this 3%?*/
+        margin: 0;
+    }
+    .right-col {
+        width: 100%;
+    }
+    
+    .right-col .description {
+        width: 100%:
+    }
+}
+@media only screen and (max-width: 1264px) { 
+    .top-row {
+        margin-bottom: 5.125%;
+    }
+}
+@media only screen and (max-width: 883px) { /*at this point i would like to have a vertical display for the three sections*/
+    .top-row {
+        margin-bottom: 7.125%;
+    }
+    .bottom-row {
+        margin: 0;
+        margin-left: 3%;
+    }
+    .bottom-row #bottom-left {
+        width: 100%;
+        margin: 1.125%;
+    } 
+    .bottom-row #bottom-middle {
+        width: 100%;
+        border: 0;
+        margin: 1.125%;
+    } 
+    .bottom-row #bottom-right {
+        width: 100%;
+        margin: 1.125%;
+    } 
+    .bottom-row .img-container {
+        float: left;
+        width: 25%;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    .bottom-row .text-container {
+        left: 0;
+        float: right;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 702px) {
+    .top-row {
+        margin-bottom: 9.125%;
+    }
+}
+@media only screen and (max-width: 638px) {
+    .top-row {
+        margin-bottom: 13.125%;
+    }
+}
+@media only screen and (max-width: 605px) {
+    .top-row {
+        margin-bottom: 17.125%;
+    }
+}
+@media only screen and (max-width: 563px) {
+    .top-row {
+        margin-bottom: 20.125%;
+    }
+}
+@media only screen and (max-width: 559px) {
+    .bottom-row {
+        display: none;
+    }
+}
+
+/* PROJECTS PAGE */
+@media only screen and (max-width: 1490px) {
+    .right-proj {
+        position: relative;
+        margin-left: 4%;
+        width: 72%;
+    }
+}
+@media only screen and (max-width: 1390px) {
+    .right-proj {
+        position: relative;
+        margin-left: 5%;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 1290px) {
+    .right-proj {
+        position: relative;
+        margin-left: 6%;
+        width: 69%;
+    }
+}
+@media only screen and (max-width: 1073px) {
+    /*.row {
+        margin-bottom: 7%;
+    }*/
+}
+@media only screen and (max-height: 690px) {
+    .row {
+        margin-bottom: 5%;
+    }
+}
+@media only screen and (min-width:300px) and (max-width: 990px) {
+    .row {
+        height: 15%;
+    }
+    .left-proj {
+        display: none;
+    }
+    .right-proj {
+        width: 100%;
+        margin: 0;
+    }
+}
+/*@media only screen and (max-width: 885px) {
+    .row {
+        margin-bottom: 10%;
+    }
+}*/
+@media only screen and (max-width: 515px) {
+    .row {
+        margin-bottom: 7.125%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .row {
+        margin-bottom: 9.125%;
+    }
+}
+@media only screen and (max-width: 432px) {
+    .row {
+        margin-bottom: 20.125%;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .row {
+        margin-bottom: 25.125%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .row {
+        margin-bottom: 29.125%;
+    }
+}
+@media only screen and (max-height: 400px) {
+    .row {
+        margin-bottom: 7%;
+    }
+}
+@media only screen and (max-width: 385px) {
+    .row {
+        margin-bottom: 33.125%;
+    }
+}
+@media only screen and (max-width: 373px) {
+    .row {
+        margin-bottom: 40.125%;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .row {
+        margin-bottom: 50.125%;
+    }
+}
+@media only screen and (max-width: 315px) {
+    .row {
+        margin-bottom: 65.125%;
+    }
+}
+@media only screen and (max-height: 280px) {
+    .row {
+        margin-bottom: 10%;
+    }
+}
+
+/* RESUME PAGE */
+@media only screen and (max-width: 560px) {
+    #resume {
+        display: none;
+    }
+}
